@@ -4,16 +4,20 @@
 
 Un proyecto para empezar a desarrollar Bots con la libreria ``discord.js``
 
-## Requisitos del proyecto
+## Objetivo del proyecto
+
+Este proyecto se creo para hacer Bots de manera rapida teniendo en cuenta las funcionalidades y facilidad de modificacion que ofrece este proyecto
+
+## Dependencias del proyecto
 
 | Dependencias | Version                       |
 |--------------|-------------------------------|
-| eris         | 14.0.0-dev.1652573522-7ce641d |
+| discord.js   | 14.0.0-dev.1652573522-7ce641d |
 | dotenv       | 16.0.0                        |
 
 > _Se recomienda utilizar la version ``18.1.0`` de ``Node``_
 
-## Estructura de los directorios
+## Gestion de directorios
 
 ```
 applications\
@@ -36,11 +40,13 @@ applications\
         |
         |__ main.js
 
+
 services\
 |
 |__ example\
     |
     |__ main.js
+
 
 events\
 |
@@ -334,3 +340,17 @@ module.exports = {
 ### Indexer
 
 Crea y actualiza las ``Aplicaciones`` creadas, editadas y eliminadas 
+
+## Eventos prefabricados
+
+### Application
+
+Este evento ejecuta las ``Aplicaciones`` cuando se crea una interaccion
+
+### Ready
+
+Este evento ejecuta las ``Aplicaciones`` y ``Servicios`` al momento de establecerse la conexion
+
+### Boot
+
+Este evento ejecuta las ``Aplicaciones`` y ``Servicios`` al momento de inicializar el proyecto
